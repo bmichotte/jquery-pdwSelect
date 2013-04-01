@@ -53,7 +53,6 @@ if (jQuery)
                     buttonClass: "pdw-button",
                     ulClass: "pdw-select-ul",
                     liClass: "pdw-select-ul-li",
-                    iClass: "icon-chevron-down",
                     aClass: "pdw-select-ul-li-a",
                     onReplaced: false
                 };
@@ -129,6 +128,7 @@ if (jQuery)
                            .appendTo(ul)
                            .click(function(e)
                            {
+                               e.preventDefault();
                                $(this).find('a').trigger('click');
                            }),
                        a = $('<a />')
