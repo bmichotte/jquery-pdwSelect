@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>jQuery pdwSelect</title>
+    <link href="../css/jquery.pdwSelect.css" media="screen" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <article>
+        <form action="#">
+            <select>
+                <option value="">Choose a value</option>
+                <option value="1">Value 1</option>
+                <option value="2">Value 2</option>
+                <option value="3">Value 3</option>
+                <option value="4">Value 4</option>
+                <option value="5">Value 5</option>
+            </select>
+        </form>
+    </article>
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="../src/jquery.pdwSelect.js"></script>
+    <script type="text/javascript">
+        $(function()
+        {
+           $('select').pdwSelect();
+        });
+    </script>
+</body>
+</html>
